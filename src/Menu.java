@@ -27,7 +27,8 @@ public class Menu {
             System.out.println("4. Pesos Mexicanos a Dolar");
             System.out.println("5. Euro a Pesos Mexicanos");
             System.out.println("6. Pesos Mexicanos a Euro");
-            System.out.println("7. Salir");
+            System.out.println("7. Mostrar historial");
+            System.out.println("8. Salir");
             System.out.println();
             System.out.print("Opcion > ");
             int opcion = entrada.nextInt();
@@ -142,7 +143,11 @@ public class Menu {
                 System.out.println("--------------------");
 
             }  else if (opcion == 7) {
+                archivo.mostrarHistorial();
+            } else if (opcion == 8) {
                 System.exit(0);
+            } else {
+                System.out.println("Opcion invalida");
             }
 
         }

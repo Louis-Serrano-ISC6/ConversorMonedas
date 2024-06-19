@@ -60,4 +60,13 @@ public class Archivo {
         }
     }
 
+    public void mostrarHistorial() {
+        List<Map<String, Object>> historial = cargarHistorial();
+        if (historial.isEmpty()) {
+            System.out.println("No hay datos en el historial.");
+        } else {
+            System.out.println(gson.toJson(historial));
+        }
+    }
+
 }
